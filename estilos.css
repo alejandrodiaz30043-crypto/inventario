@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    padding: 30px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00adb5;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.card {
+    background-color: #1e1e24;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2a2a32;
+}
+
+.card h3 {
+    color: #00adb5;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #2a2a32;
+    padding-bottom: 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr 100px;
+    gap: 12px;
+    align-items: center;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #7c7c8a;
+}
+
+input {
+    background-color: #2a2a32;
+    border: 1px solid #3e3e4a;
+    border-radius: 4px;
+    padding: 8px;
+    color: #fff;
+    outline: none;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #00adb5;
+}
+
+input::placeholder {
+    color: #555562;
+}
+
+.btn-form {
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-form:hover {
+    background-color: #008087;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a32;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #2a2a32;
+    color: #00adb5;
+}
+
+.prod-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #121214;
+    display: block;
+}
+
+.btn-borrar {
+    background: transparent;
+    border: none;
+    color: #f25c5c;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #81c784;
+    margin-top: 15px;
+}

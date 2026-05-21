@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="alejandro diaz " />
+  <link rel="stylesheet" href="./estilos.css">
+  <title>Inventario Interactivo</title>
+</head>
+
+<body>
+  <h1>Sistema de Inventario</h1>
+
+  <section class="card">
+    <h3>PRODUCTOS</h3>
+
+    <section class="form-grid">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" />
+      <section></section> <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" />
+      <button id="btnAgregar" class="btn-form">Agregar</button>
+      
+      <label for="precio">Precio unitario:</label>
+      <input type="number" id="precio" />
+      <section></section> <label for="imagen">URL Imagen:</label>
+      <input type="text" id="imagen" placeholder="https://ejemplo.com/moto.jpg" />
+      <section></section> </section>
+  </section>
+
+  <section class="card">
+    <h3>Inventario</h3>
+
+    <table id="tabla">
+     <thead>
+  <tr>
+    <th>#</th> <th>Imagen</th>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Precio</th>
+    <th>Total</th>
+    <th>Acciones</th>
+  </tr>
+</thead>
+      <tbody>
+        </tbody>
+    </table>
+
+    <section class="total" id="totalGeneral">Total general: $0</section>
+  </section>
+
+  <section class="card">
+    <h3>Archivo JSON Generado</h3>
+    <p style="font-size: 0.9rem; color: #7c7c8a; margin-bottom: 10px;">Formato de texto plano listo para guardarse:</p>
+    <textarea id="json-preview" readonly style="width: 100%; height: 150px; background-color: #121214; color: #81c784; font-family: monospace; padding: 10px; border: 1px solid #2a2a32; border-radius: 4px; resize: none; outline: none;"></textarea>
+    <button id="btnGuardarJson" class="btn-form" style="margin-top: 10px; width: 100%;">Guardar Archivo JSON</button>
+  </section>
+
+  <script src="./codigo.js" defer></script>
+</body>
+
+</html>
